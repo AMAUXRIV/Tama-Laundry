@@ -7,8 +7,8 @@ module.exports = class BotController extends Controller {
     async introduction(request) {
       return Response.menu.fromArrayOfString(
         [
-          f("menu.daftarProduk"),
-          f("menu.alamatKantor")
+          f("menu.daftarHarga"),
+          f("menu.cekCucian")
         ],
         f("intro", [request.name]),
         f("template.menu")
@@ -19,7 +19,7 @@ module.exports = class BotController extends Controller {
       return this.reply("Ini produk digital saya, bisa dikunjungi di http://dewakoding.com")
     }
 
-    async alamatKantor(request) {
+    async cekCucian(request) {
       return this.reply("Alamat kantor kami ada di Jakarta")
     }
 

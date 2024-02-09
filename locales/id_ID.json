@@ -1,6 +1,6 @@
 {
-    "intro": "Selamat datang",
+    "intro": "Halo Aku Tama Laundry",
     "template.menu": "Ketik angka *{{number}}* : untuk *{{menu}}*",
-    "menu.daftarProduk": "🧰 Daftar Produk",
-    "menu.alamatKantor": "Alamat Kantor"
+    "menu.daftarHarga": "🧰 Daftar Harga",
+    "menu.cekCucian": "👕 Cek Cucian"
 }
