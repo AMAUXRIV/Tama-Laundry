@@ -2,5 +2,8 @@
     "intro": "Halo Aku Tama Laundry",
     "template.menu": "Ketik angka *{{number}}* : untuk *{{menu}}*",
     "menu.daftarHarga": "🧰 Daftar Harga",
-    "menu.cekCucian": "👕 Cek Cucian"
+    "menu.cekCucian": "👕 Cek Cucian",
+    "menu.back":"🏠 Kembali ke Menu Utama",
+    "daftarHargaTemplate" : "👕 *_Daftar Harga Tama Laundry_* 👕: \n\n- Cuci & Setrika : 6rb/Kg\n\n- Setrika : 4rb/Kg",
+    "footer": "*Pelayanan Terbaik Untukmu di Setiap Saat.* 😁 \n\nKetik 0 untuk kembali ke menu utama"
 }

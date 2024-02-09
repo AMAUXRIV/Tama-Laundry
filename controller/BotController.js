@@ -1,5 +1,6 @@
 const { Controller, Response } = require("pepesan");
 const f = require("../utils/Formatter");
+const gsheet = require("../service/gsheet")
 
 module.exports = class BotController extends Controller {
 
@@ -15,12 +16,31 @@ module.exports = class BotController extends Controller {
       );
     }
 
-    async product(request) {
-      return this.reply("Ini produk digital saya, bisa dikunjungi di http://dewakoding.com")
+    async daftarHarga(request) {
+      await this.reply(f("daftarHargaTemplate"))
+      return f("footer")
     }
 
     async cekCucian(request) {
-      return this.reply("Alamat kantor kami ada di Jakarta")
+     const responseStr =  await gsheet.getData(request.number)
+     return this.reply (responseStr)
+
+    }
+
+    async sendBasicMenu(request){
+      return Response.menu.fromArrayOfObject(
+        [
+          {
+            value:`menu.back`,
+            text: f("menu.back"),
+            code:0
+
+          }
+        ] ,
+        "",
+        f("template.menu")
+
+      )
     }
 
 }
