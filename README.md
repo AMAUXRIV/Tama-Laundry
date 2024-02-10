@@ -8,7 +8,7 @@ Teman-teman tinggal ikuti saja syntax dari library pepesan untuk membuat BOT Wha
 
 ## Cara Install
 
-1. buat file .env dengan cara berikut
+1. buat file .env dengan cara berikut jika ingin membatasi no yang akan di response
 ```
 cp .env.example .env
 ```
@@ -20,3 +20,4 @@ npm install
 ```
 npm run dev
 ```
+

@@ -6,11 +6,11 @@ const axiosInstance = axios.create({
     baseURL:baseUrl,
     headers: {
         "Content-Type": "application/json",
-    }
+    } 
 })
-
+   
 exports.getData= async(whatsapp) => {
-    console.log(">>>>",whatsapp)
+    console.log(">>>>",whatsapp) 
     try {
         const response = await axiosInstance.get();
         let responseStr = ""
